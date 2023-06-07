@@ -4,7 +4,7 @@ import StatusTable from "./reusable/StatusTable.js"
 const plugin = ({widgets, simulator, vehicle}) => {
 
     widgets.register("Signals", StatusTable({
-        apis: ["Vehicle.Body.Windshield.Front.Wiping.Mode", "Vehicle.Body.Hood.IsOpen", "Vehicle.Body.Lights.IsHighBeamOn"],
+        apis: ["Vehicle.CurrentLocation.GNSSReciever.MountingPosition.X", "Vehicle.CurrentLocation.GNSSReciever.MountingPosition.Y", "Vehicle.ADAS.CruiseControl.SpeedSet"],
         vehicle: vehicle,
         refresh: 1000
     }));
