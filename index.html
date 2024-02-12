@@ -8,7 +8,40 @@
     <title>
         Cho Ly
     </title>
+    <style>
+        .video-container {
+        position: relative;
+        }
 
+        .video-container video {
+            width: 100%;
+            /* border: 4px solid #FFC107; */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adding a shadow for depth */
+            border-radius: 8px; /* Optional: adds rounded corners */
+        }
+
+        .video-container .hover-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(calc(-50% - 24px), -50%);
+        background: linear-gradient(310deg, #56CCF2, #2F80ED);
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 8px;
+        pointer-events: none;
+        box-shadow: 4px 4px 50px -4px rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        letter-spacing: 0.8px;
+        transition: all 400ms ease;
+        }
+
+        .video-container .hover-text.active {
+        opacity: 1;
+        letter-spacing: 0;
+        transform: translate(-50%, -50%);
+        }
+    </style>
     <!-- <meta name="keywords" content="DJX, ZDX">
     <meta name="description" content="DJX LOVES ZDX!"> -->
 
@@ -120,7 +153,7 @@
             <div class="col-lg-3">
                 <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
                     <h3>Records</h3>
-                    <h6 class="text-secondary font-weight-normal pe-3">Some photos can be seen here!</h6>
+                    <h6 class="text-secondary font-weight-normal pe-3">Đây đều là những bức ảnh mà anh rất rất yêu, phần vì nó có em, phần cũng vì nó đều là những khoảnh khắc anh cảm thấy rất hạnh phúc.</h6>
                 </div>
             </div>
             <div class="col-lg-9">
@@ -506,10 +539,100 @@
         </div>
     </div>
 
+
+    
+    <div class="container mt-sm-5 mt-3">
+        <div class="row pt-lg-6">
+            <div class="col-lg-9">
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <a>
+                            <div class="main-container">
+                                <div class="video-container">
+                                  <video src="assets/vids/IMG_2612.mp4" loop></video>
+                                  <div class="hover-text active">Di Gia Vo Hoc</div>
+                                </div>
+                              </div>
+                            
+
+                            <div class="mt-2 ms-2">
+                                <h6 class="mb-0">20.1.2024</h6>
+                                <p class="text-secondary text-sm"></p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <a>
+                            <div class="main-container">
+                                <div class="video-container">
+                                  <video src="assets/vids/IMG_2632.mp4" loop></video>
+                                  <div class="hover-text active">Nau An Ma Mat Ao</div>
+                                </div>
+                              </div>
+                            
+
+                            <div class="mt-2 ms-2">
+                                <h6 class="mb-0">23.1.2024</h6>
+                                <p class="text-secondary text-sm"></p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <a>
+                            <div class="main-container">
+                                <div class="video-container">
+                                  <video src="assets/vids/IMG_2681.mp4" loop></video>
+                                  <div class="hover-text active">An Dem Bat On</div>
+                                </div>
+                              </div>
+                            
+
+                            <div class="mt-2 ms-2">
+                                <h6 class="mb-0">26.1.2024</h6>
+                                <p class="text-secondary text-sm"></p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <a>
+                            <div class="main-container">
+                                <div class="video-container">
+                                  <video src="assets/vids/IMG_2692.mp4" loop></video>
+                                  <div class="hover-text active">Don Sach Tu Lanh</div>
+                                </div>
+                              </div>
+                            
+
+                            <div class="mt-2 ms-2">
+                                <h6 class="mb-0">30.1.2024</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-3">
+                <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
+                    <h3>Timelapses</h3>
+                    <h6 class="text-secondary font-weight-normal pe-3">Tớ thêm section này vì tớ khá thích xem lại những vid này mỗi lúc tớ rảnh tay.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container mt-sm-5 mt-3" style="padding-top: 1.3rem;">
+        <div class="row">
+            <video controls autoplay loop>
+                <source src="assets/img/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div> -->
+
     
 
 <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-
+<script src="/assets/js/video.js"></script>
 <script src="./assets/js/plugins/countup.min.js"></script>
 
 <script src="./assets/js/plugins/calendar/core.js"></script>
